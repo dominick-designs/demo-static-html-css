@@ -1,7 +1,7 @@
 {
-  "name": "html-css-static-demo",
+  "name": "static-html-css-grid",
   "version": "1.0.0",
-  "description": "css grid; static html",
+  "description": "demo css grid, advanced html",
   "main": "index.html",
   "scripts": {
     "start": "serve",
