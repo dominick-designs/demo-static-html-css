@@ -1,132 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Demo HTML & CSS</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <header class="container">
-<div class="flex-header">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Demo HTML & CSS</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<header class="container">
+			<div class="flex-header">
+				<div id="align-left">
+					<h3>Services:</h3>
+					<ul>
+						<li>Mobile app development</li>
+						<li>Web development</li>
+						<li>Social media marketing</li>
+						<li>Email marketing</li>
+					</ul>
+				</div>
 
+				<div id="center-image">
+					<img
+						class="logo"
+						src="https://atjvzgrowo.cloudimg.io/v7/https://cookieless-files.fastsecure.website/dom-designs/images/logo/logo_120x120@2x.png"
+						width="120"
+						height="120"
+						usemap="#logomap"
+					/>
+				</div>
 
-      <div id="align-left">
-        <h3>Services:</h3>
-        <ul>
-          <li>Mobile app development</li>
-          <li>Web development</li>
-          <li>Social media marketing</li>
-          <li>Email marketing</li>
-        </ul>
-      </div>
+				<map name="logomap">
+					<area
+						target="_blank"
+						alt="Homepage"
+						title="Homepage"
+						href="https://dominickdesigns.space"
+						coords="26,58,20"
+						shape="circle"
+					/>
+				</map>
 
-      <div id="center-image">
-        <img
-          class="logo"
-          src="https://atjvzgrowo.cloudimg.io/v7/https://cookieless-files.fastsecure.website/dom-designs/images/logo/logo_120x120@2x.png"
-          width="120"
-          height="120"
-          usemap="#logomap"
-        />
-      </div>
+				<div id="align-top">
+					<h3>Contact:</h3>
+					<ul class="list-without-bullet">
+						<li>
+							<a href="mailto:dominick@dominickdesigns.space123"
+								>Email</a
+							>
+						</li>
+						<li><a href="tel:+808-123-333">Phone</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-      <map name="logomap">
-        <area target="_blank" alt="Homepage" title="Homepage" href="https://dominickdesigns.space" coords="26,58,20" shape="circle">
-    </map>
+		<main class="main-content-grid">
+			<aside class="left-sidebar">
+				<p>
+					Optimal characters per line: 50-75.
+					<a
+						href="https://baymard.com/blog/line-length-readability?utm_source=designernews"
+						>Source</a
+					>
+				</p>
+			</aside>
 
-      <div id="align-top">
-        <h3>Contact:</h3>
-        <ul class="list-without-bullet">
-          <li>
-            <a href="mailto:dominick@dominickdesigns.space123">Email</a>
-          </li>
-          <li><a href="tel:+808-123-333">Phone</a></li>
-        </ul>
-      </div>
+			<article class="middle-main-content">
+				<p>main content here</p>
+			</article>
+		</main>
 
-    </div>
+		<section class="section-flex">
+			<article>
+				<header>
+					<h3>HTML</h3>
+				</header>
+				<p>
+					<dfn
+						><abbr title="Hyper Text Markup Language">HTML</abbr></dfn
+					>
+					Centers around text.
+				</p>
+				<p>
+					Think of it like a word processor. It modifies, adjusts, and
+					refines text.
+				</p>
+			</article>
 
-    
-    </header>
+			<article>
+				<header>
+					<h3>CSS</h3>
+				</header>
+				<p>
+					<dfn><abbr title="Cascading Style Sheet">CSS</abbr></dfn>
+					Centers around modifying the appearance of text.
+				</p>
+				<p>
+					Think of it like a photo editor. You can add colors, space,
+					and even animation.
+				</p>
+			</article>
 
-    <main class="main-content-grid">
-      
-      <aside class="left-sidebar">        
-          <p>
-            Optimal characters per line: 50-75.
-            <a
-              href="https://baymard.com/blog/line-length-readability?utm_source=designernews"
-              >Source</a
-            >
-          </p>        
-      </aside>
+			<article>
+				<header>
+					<h3>JavaScript</h3>
+				</header>
+				<p>
+					<dfn>JavaScript</dfn> Centers around applying action to
+					elements.
+				</p>
+				<p>
+					Think of it like an oven. This is where you make something
+					new from raw ingredients.
+				</p>
+			</article>
+		</section>
 
-      <article class="middle-main-content">
-        <div>
-          <p>main content here</p>
-        </article>    
-                 
-    </main>
+		<section class="podcast-flex">
+			<div>
+				<img src="https://via.placeholder.com/150" alt="" />
+				<p>As <cite>Rubber Duck</cite> says</p>
+				<blockquote>
+					built on the shoulders of giants. Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Error veritatis saepe itaque
+					at earum. Accusantium perspiciatis molestiae blanditiis quod
+					quidem, illum vitae assumenda quo rerum veniam in adipisci
+					totam temporibus!
+				</blockquote>
+				<audio controls>
+					<source src="/assets/audio/a-thousand-years.mp3" />
+					If you are seeing this then that means you are currently
+					using a browser that does not support Audio file embedding
+				</audio>
+			</div>
 
-<section class="section-flex">
+			<div>
+				<img src="https://via.placeholder.com/150" alt="" />
+				<p>As <cite>The Cat</cite> says</p>
+				<blockquote>
+					built on the shoulders of giants. Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Error veritatis saepe itaque
+					at earum. Accusantium perspiciatis molestiae blanditiis quod
+					quidem, illum vitae assumenda quo rerum veniam in adipisci
+					totam temporibus!
+				</blockquote>
+				<audio controls>
+					<source src="/assets/audio/a-thousand-years.mp3" />
+					If you are seeing this then that means you are currently
+					using a browser that does not support Audio file embedding
+				</audio>
+			</div>
+		</section>
 
-  <article>
-    <header>
-    <h3>HTML</h3>
-    </header>
-      <p><dfn><abbr title="Hyper Text Markup Language">HTML</abbr></dfn> Centers around text.</p>
-      <p>
-        Think of it like a word processor. It modifies, adjusts, and refines text.
-      </p>
-    
-  </article>
+		<section class="table-flex">
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th scope="col" colspan="3">HOSTING</th>
+						</tr>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">Starter</th>
+							<th scope="col">Pro</th>
+							<th scope="col">Business</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Disk Space</th>
+							<td>2 GB</td>
+							<td>10 GB</td>
+							<td>50 GB</td>
+						</tr>
+						<tr>
+							<th scope="row">Bandwitdh</th>
+							<td>5 GB/mo</td>
+							<td>10 GB/mo</td>
+							<td>50 GB/mo</td>
+						</tr>
+						<tr>
+							<th scope="row">Email accts</th>
+							<td>2</td>
+							<td>20</td>
+							<td>Unlimited</td>
+						</tr>
+						<tr>
+							<th scope="row">CPU units</th>
+							<td>1</td>
+							<td>4</td>
+							<td>10</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<td></td>
+						<th scope="col" colspan="3">Sign up now and Save 10%</th>
+					</tfoot>
+				</table>
+			</div>
+		</section>
 
-<article>
-  <header>
-  <h3>CSS</h3>
-  </header>
-  <p><dfn><abbr title="Cascading Style Sheet">CSS</abbr></dfn> Centers around modifying the appearance of text.</p>
-  <p>
-    Think of it like a photo editor. You can add colors, space, and even animation.
-  </p>
-  </article>
-  
-  <article>
-    <header>
-    <h3>JavaScript</h3>
-    </header>
-    <p><dfn>JavaScript</dfn> Centers around applying action to elements.</p>
-  <p>
-    Think of it like an oven. This is where you make something new from raw ingredients.
-  </p>
-    </article>
-    
-</section>
+		<section class="form-flex">
+			<form action="https://example.com/form.php" method="post">
+				<fieldset>
+					<legend>Your Details</legend>
 
-<section>
-<img src="https://via.placeholder.com/150" alt="">
-  <blockquote>
-    I will love you for a thousand years
-  </blockquote>
-<audio controls> 
-  
-  <source src="/assets/audio/a-thousand-years.mp3">
-If you are seeing this then that means you are currently using a browser that does not support Audio file embedding
-</audio>
-</section>
+					<p>
+						<label for="name"
+							>Name
+							<input type="text" name="name" id="name" />
+						</label>
+					</p>
+					<p id="displayname">
+						Display Name here:
+					</p>
+					<label for="email">
+						Email
+						<input type="email" name="email" id="email" />
+					</label>
+				</fieldset>
 
-    <footer class="container-footer">            
-          <p class="footer-style">
-            &copy; 2020 Dominick Designs Web Studio LLC &nbsp;|&nbsp;
-            <a href="https://dominickdesigns.space/legal/">Privacy</a>
-            &nbsp; | &nbsp;
-            <a href="https://dominickdesigns.space/legal/">
-              Terms & Conditions</a
-            >
-          </p>          
-    </footer>
-    
-  </body>
+				<fieldset>
+					<legend>Request Quote</legend>
+					<p>
+						<label for="referrer">
+							How did you hear about us?
+						</label>
+						<select name="referrer" id="referrer">
+							<option value="organic">Online Search</option>
+							<option value="advert">Advertisement</option>
+							<option value="friend">Friend</option>
+							<option value="other">other</option>
+						</select>
+					</p>
+					<p>
+						<label for="already-have">
+							Do you already have a website?
+							<input
+								type="checkbox"
+								name="already-have"
+								id="already-have"
+							/>
+						</label>
+					</p>
+					<p class="slidecontainer">
+						<label for="range">
+							What is your budget?
+							<input
+								type="range"
+								min="100"
+								max="10000"
+								value="2000"
+								name="range"
+								id="range"
+								list="marks"
+							/>
+							<datalist id="marks">
+								<option value="500"></option>
+								<option value="3000"></option>
+								<option value="6000"></option>
+								<option value="8000"></option>
+								<option value="10000"></option>
+							</datalist>
+							<p>Value: <span id="display"></span></p>
+						</label>
+					</p>
+
+					<label for="comments">
+						Comments
+					</label>
+					<br />
+					<textarea
+						name="comments"
+						id="comments"
+						cols="30"
+						rows="10"
+					></textarea>
+					<p>
+						<label for="newsletter">
+							Sign me up for the newsletter!
+							<input
+								type="checkbox"
+								name="newsletter"
+								id="newsletter"
+							/>
+						</label>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>
+						Upload file
+					</legend>
+					<input type="file" name="file" id="file" />
+
+					<br />
+				</fieldset>
+
+				<fieldset id="submit">
+					<br />
+					<input type="submit" value="submit" />
+				</fieldset>
+			</form>
+		</section>
+
+		<footer class="container-footer">
+			<p class="footer-style">
+				&copy; 2020 Dominick Designs Web Studio LLC &nbsp;|&nbsp;
+				<a href="https://dominickdesigns.space/legal/">Privacy</a>
+				&nbsp; | &nbsp;
+				<a href="https://dominickdesigns.space/legal/">
+					Terms & Conditions</a
+				>
+			</p>
+		</footer>
+
+		<script>
+			let slider = document.getElementById("range");
+			let output = document.getElementById("display");
+			output.innerHTML = slider.value; //display default value
+
+			slider.oninput = function() {
+				output.innerHTML = this.value;
+			};
+
+			let getName = document.getElementById("name");
+			let getDisplay = document.getElementById("displayname");
+
+			getName.onkeypress = function() {
+				getDisplay.innerHTML = `Your name is ${this.value}`;
+			};
+		</script>
+	</body>
 </html>

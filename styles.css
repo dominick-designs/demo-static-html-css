@@ -69,8 +69,42 @@
 	padding: 0 2% 0 2%;
 }
 
+.podcast-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: no-wrap;
+	padding: 0 2% 0 2%;
+}
+
+.table-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+
+.form-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5%;
+}
+
 .section-flex > * {
 	padding: 0 2% 0 2%;
+}
+
+.podcast-flex > * {
+	padding: 5% 2% 0 2%;
+}
+
+.table-flex > * {
+	padding: 5%;
 }
 
 @media only screen and (max-width: 560px) {
