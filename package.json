@@ -1,7 +1,7 @@
 {
-  "name": "static-html-css-grid",
+  "name": "demo-static-html-css",
   "version": "1.0.0",
-  "description": "demo css grid, advanced html",
+  "description": "demo css grid, advanced html. develop custom layout using flexbox, grid. ",
   "main": "index.html",
   "scripts": {
     "start": "serve",

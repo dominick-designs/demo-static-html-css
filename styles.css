@@ -1,3 +1,5 @@
+@import url("colorstyles.css");
+
 /* Border box declaration https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 * {
 	box-sizing: border-box;
@@ -8,6 +10,44 @@
 *:after {
 	box-sizing: inherit;
 }
+
+/* main navigation */
+.navgrid {
+	display: grid;
+	grid-template-columns: [logo] 50px [navlinks] 1fr;
+	grid-template-rows: [navrow] auto;
+}
+
+.navigflex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.small-logo {
+	/* display: flex; */
+	width: 50px;
+	height: 50px;
+}
+
+/* positioning elements */
+
+.postionabs {
+	position: absolute;
+	left: 25%;
+	bottom: 150px;
+	background-color: gray;
+	z-index: -1;
+}
+
+.goright {
+	float: right;
+	margin: 7% 0% 0% 0%;
+	padding: 0 5% 2% 3%;
+}
+
+/* end positioning elements demo */
 
 /* contains grid elements */
 
@@ -26,28 +66,13 @@
 	gap: 1rem;
 	justify-items: center;
 	align-items: center;
-	background-color: cornsilk;
 }
-
-/* begin grid elements */
-.header {
-	background-color: cornsilk;
-}
-.left-sidebar {
-	background-color: cornsilk;
-}
-.middle-main-content {
-	background-color: cornsilk;
-}
-
-/* end grid elements */
 
 /* Begin flex items in header grid area */
 .flex-header {
 	display: flex;
 	justify-content: space-around;
-	background-color: cornsilk;
-	margin-bottom: 2%;
+	margin: 2% 0;
 }
 
 #center-image {
