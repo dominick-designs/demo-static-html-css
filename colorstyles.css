@@ -1,9 +1,21 @@
 .flex-header {
-	background-color: cornsilk;
+	background-color: lightgray;
 }
 
 .container-footer {
-	background-color: cornsilk;
+	background-color: lightgray;
+}
+
+.hero-header {
+	background-color: lightgray;
+}
+
+.bottomsection {
+	background-color: lightgray;
+}
+
+hr {
+	background-color: black;
 }
 /* begin grid elements */
 .header {

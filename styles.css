@@ -31,22 +31,27 @@
 	height: 50px;
 }
 
-/* positioning elements */
-
-.postionabs {
-	position: absolute;
-	left: 25%;
-	bottom: 150px;
-	background-color: gray;
-	z-index: -1;
+/* hero header */
+.hero-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25vh;
+	margin: 3% 0;
 }
 
+.hero-header h1 {
+	position: relative;
+	top: -15px;
+}
+
+/* positioning elements */
 .goright {
 	float: right;
 	margin: 7% 0% 0% 0%;
 	padding: 0 5% 2% 3%;
 }
-
 /* end positioning elements demo */
 
 /* contains grid elements */
@@ -69,7 +74,7 @@
 }
 
 /* Begin flex items in header grid area */
-.flex-header {
+/* .flex-header {
 	display: flex;
 	justify-content: space-around;
 	margin: 2% 0;
@@ -81,7 +86,7 @@
 
 .list-without-bullet {
 	list-style: none outside none;
-}
+} */
 
 .section-flex {
 	display: flex;
@@ -94,7 +99,13 @@
 	padding: 0 2% 0 2%;
 }
 
-.podcast-flex {
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .podcast-flex {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -102,6 +113,11 @@
 	align-content: center;
 	flex-wrap: no-wrap;
 	padding: 0 2% 0 2%;
+} */
+
+.podcast-flex {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .table-flex {
@@ -132,6 +148,29 @@
 	padding: 5%;
 }
 
+.bottomsection {
+	display: grid;
+	grid-template-columns: 20% 40% 1fr;
+	padding: 5%;
+}
+
+.footernav {
+	display: flex;
+	flex-direction: row;
+}
+
+.footernav ul {
+	list-style: none;
+}
+
+.socialalign {
+	display: flex;
+}
+
+.socialalign img {
+	margin: 5% 2% 5% 2%;
+}
+
 @media only screen and (max-width: 560px) {
 	.main-content-grid {
 		display: grid;
@@ -141,14 +180,14 @@
 		gap: 1rem;
 	}
 
-	.middle-main-content {
+	/* .middle-main-content {
 		grid-area: "main";
 		order: -1;
-	}
+	} */
 
-	.left-sidebar {
+	/* .left-sidebar {
 		grid-area: "aside";
-	}
+	} */
 
 	.flex-header {
 		display: flex;
@@ -173,5 +212,19 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+	}
+
+	.podcast-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.podcast-flex img {
+		margin-left: 25%;
+	}
+	.podcast-flex audio {
+		margin-left: 10%;
 	}
 }

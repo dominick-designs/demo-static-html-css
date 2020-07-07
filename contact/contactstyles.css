@@ -1,6 +1,1 @@
-p.pospra {
-	position: relative;
-	top: 10%;
-	bottom: 15px;
-	left: 25%;
-}
+@import url("/styles.css");

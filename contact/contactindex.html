@@ -11,9 +11,113 @@
 		<link rel="stylesheet" href="contactstyles.css" />
 	</head>
 	<body>
-		<h1>Contact Us</h1>
-		<p>first paragraph relative</p>
-		<p class="pospra">second paragraph relative</p>
-		<p>third paragraph relative</p>
+		<section class="form-flex">
+			<form action="https://example.com/form.php" method="post">
+				<fieldset>
+					<legend>Your Details</legend>
+
+					<p>
+						<label for="name"
+							>Name
+							<input type="text" name="name" id="name" />
+						</label>
+					</p>
+					<p id="displayname">
+						Display Name here:
+					</p>
+					<label for="email">
+						Email
+						<input type="email" name="email" id="email" />
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Request Quote</legend>
+					<p>
+						<label for="referrer">
+							How did you hear about us?
+						</label>
+						<select name="referrer" id="referrer">
+							<option value="organic">Online Search</option>
+							<option value="advert">Advertisement</option>
+							<option value="friend">Friend</option>
+							<option value="other">other</option>
+						</select>
+					</p>
+					<p>
+						<label for="already-have">
+							Do you already have a website?
+							<input
+								type="checkbox"
+								name="already-have"
+								id="already-have"
+							/>
+						</label>
+					</p>
+					<p class="slidecontainer">
+						<label for="range">
+							What is your budget?
+							<input
+								type="range"
+								min="100"
+								max="10000"
+								value="2000"
+								name="range"
+								id="range"
+								list="marks"
+							/>
+							<datalist id="marks">
+								<option value="500"></option>
+								<option value="3000"></option>
+								<option value="6000"></option>
+								<option value="8000"></option>
+								<option value="10000"></option>
+							</datalist>
+							<p>My budget allows: $<span id="display"></span></p>
+						</label>
+
+						<label for="begin">
+							When can you begin your project?
+							<input type="date" name="begin" id="begin" />
+						</label>
+					</p>
+
+					<label for="comments">
+						Comments
+					</label>
+					<br />
+					<textarea
+						name="comments"
+						id="comments"
+						cols="30"
+						rows="10"
+					></textarea>
+					<p>
+						<label for="newsletter">
+							Sign me up for the newsletter!
+							<input
+								type="checkbox"
+								name="newsletter"
+								id="newsletter"
+							/>
+						</label>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>
+						Upload file
+					</legend>
+					<input type="file" name="file" id="file" />
+
+					<br />
+				</fieldset>
+
+				<fieldset id="submit">
+					<br />
+					<input type="submit" value="submit" />
+				</fieldset>
+			</form>
+		</section>
 	</body>
 </html>
